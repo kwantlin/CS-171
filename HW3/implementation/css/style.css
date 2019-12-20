@@ -1,0 +1,28 @@
+.column1 {
+    float: left;
+    width: 50%;
+}
+.column2 {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.alignment {
+    text-anchor: end;
+}
+
+.styling{
+    background-color: whitesmoke;
+    margin: 30px;
+    padding: 30px;
+    text-anchor: middle;
+    font-size: 15px;
+}
+

@@ -1,0 +1,425 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CS 171</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center justify-content-between no-gutters">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo-img">
+                                <a href="index.html">
+<!--                                    <img src="img/logo.png" alt="">-->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" href="index.html">home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area slider_bg_1 d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="single_slider">
+                        <div class="slider_text">
+                            <h3> Getting Educated: <br>
+                                An Analysis of Post-Secondary Education</h3>
+                            <p>Higher education has been called into question for a number of reasons recently. We examine how educational achievement has changed over the years and if the United States is accommodating the needs of the education-seeking population.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- about_area_start -->
+    <div class="about_area gray-bg">
+        <div class="container">
+            <center><h1>Who's going to college?</h1></center>
+            <center><h4>We begin our analysis by providing an overview of regional changes in the number of students going to college.</h4></center>
+            <center>
+                <select class="mdb-select" id="selected-map">
+                    <option value="yr2017">2017</option>
+                    <option value="yr2016">2016</option>
+                    <option value="yr2015">2015</option>
+                    <option value="yr2014">2014</option>
+                    <option value="yr2012">2012</option>
+                    <option value="yr2010">2010</option>
+                    <option value="yr2000">2000</option>
+                    <option value="yr1990">1990</option>
+                    <option value="yr1980">1980</option>
+                    <option value="yr1970">1970</option>
+                </select>
+            </center>
+            <br>
+                <div id="choropleth"></div>
+            <center><h3>The data supports claims that the number of students pursuing college degrees has increased. We can see that there has been a fairly consistent increase in the number of students going to college over the past almost-five decades.</h3></center>
+            <center><p>It's critical to note that states with much larger populations than others, by default, will send more students to college than others just based on population.</p></center>
+        </div>
+    </div>
+    <!-- about_area_end -->
+
+    <!-- causes_area_start -->
+    <div class="causes_area">
+        <center><div class="container-barchart">
+            <center><h1>Have colleges actually become more diverse?</h1></center>
+            <center><h4>There is no doubt that educational achievement has changed over the years among various groups—gender, race, ethnicity, or income.</h4></center>
+
+            <br>
+            <center>
+                <select id="select-key-bar" class="mdb-select">
+                    <option value="y2017">2017</option>
+                    <option value="y2016">2016</option>
+                    <option value="y2015">2015</option>
+                    <option value="y2014">2014</option>
+                    <option value="y2013">2013</option>
+                    <option value="y2012">2012</option>
+                    <option value="y2010">2010</option>
+                    <option value="y2000">2000</option>
+                    <option value="y1990">1990</option>
+                    <option value="y1980">1980</option>
+                    <option value="y1976">1976</option>
+                </select>
+
+            </center>
+        <br>
+            <div class="row chart-elements">
+                    <div id ="barchart-area"></div>
+            </div>
+            <br><br>
+                <center><h3>However, data shows that while diversity of race and ethnicity among students at post-secondary,</br>institutions has increased, it is still marginal in comparison to the number of white students.</h3></center>
+        </div></center>
+    </div>
+    <!-- causes_area_end -->
+
+    <!-- about_area_start -->
+    <div class="about_area gray-bg">
+        <div class="container">
+            <center><h1>Is everyone really studying STEM?</h1></center>
+            <center><h4>People seem to think that everyone these days is studying Computer Science </br>and Engineering, but that is in fact not the case.</h4></center>
+
+            <div class="row align-items-center" id="helper">
+                <br>
+
+<!--                            <span>Title</span>-->
+<!--                            <h3>Insert Visualization #2</h3>-->
+<!--                            <p>Text</p>-->
+                    <br>
+<!--                    <select id="select-key-line" id="selected-line">-->
+<!--                        <option value="y2017">CS and Engineering</option>-->
+<!--                        <option value="y2017">Other STEM</option>-->
+<!--                        <option value="y2017">Humanities</option>-->
+<!--                        <option value="y2017">Social Sciences</option>-->
+<!--                        <option value="y2017">Arts</option>-->
+<!--                    </select>-->
+                    <div id="line-graph"></div>
+                <center><h3>Even though the number of students pursuing STEM subjects has increased significantly, it has yet to overtake most other majors. In fact, business as a major has continued to increase, and at a much faster rate than any of the STEM subjects!</h3></center>
+
+                <!--                <div class="col-xl-6 col-md-6"> -->
+<!--                    <div class="about_right">-->
+<!--                        <div class="section_title">-->
+<!--                            <span>About Us</span>-->
+<!--                            <h3>-->
+<!--                                Text-->
+<!--                            </h3>-->
+<!--                        </div>-->
+<!--                        <p>Text</p>-->
+<!--                        <a href="#" class="boxed_btn3">Text</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- about_area_end -->
+
+    <!-- servce_area_start -->
+    <div class="servce_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-60">
+
+                        <h3>
+                            Findings Thus Far
+                        </h3>
+                        <p>
+                            Here's what we've found so far...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <a href="#choropleth">
+                    <div class="single_serve text-center">
+                        <div class="serve_icon">
+                            1
+                        </div>
+                        <h3>College Students</h3>
+                        <p>On average, the number of students attending college has increased steadily.</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <a href="#barchart-area">
+                        <div class="single_serve text-center">
+                            <div class="serve_icon">
+                                2
+                            </div>
+                            <h3>College Make-up</h3>
+                            <p>Diversity has increased in colleges, but not to a satisfactory extent.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <a href="#line-graph">
+                    <div class="single_serve text-center">
+                        <div class="serve_icon">
+                            3
+                        </div>
+                        <h3>College Majors</h3>
+                        <p>The info we hear about the popularity of college majors isn't entirely factual.</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- servce_area_end -->
+
+<!--    &lt;!&ndash; help_area_start &ndash;&gt;-->
+<!--    <div class="help_area gray-bg">-->
+<!--        <div class="container">-->
+<!--            <div class="row align-items-center">-->
+<!--                <div class="col-xl-4">-->
+<!--                    <div class="help_info">-->
+<!--                        <div class="section_title">-->
+<!--                            <span>Text</span>-->
+<!--                            <h3>-->
+<!--                                Text-->
+<!--                            </h3>-->
+<!--                        </div>-->
+<!--                        <p>Insert Paragraph</p>-->
+<!--                        <a href="#">See All Causes</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-xl-8">-->
+<!--                    <div class="help_slider_active owl-carousel">-->
+<!--                        <div class="single_help_wrap">-->
+<!--                            <div class="thumb">-->
+<!--                                <img src="#" alt="">-->
+<!--                            </div>-->
+<!--                            <div class="help_content">-->
+<!--                                <h3>Text</h3>-->
+<!--                                <div class="donate_amount d-flex">-->
+<!--                                    <div class="single_amount">-->
+<!--                                        <span>Text</span>-->
+<!--                                        <h3>Text</h3>-->
+<!--                                    </div>-->
+<!--                                    <div class="single_amount">-->
+<!--                                        <span>Text</span>-->
+<!--                                        <h3>Text</h3>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <a href="#" class="boxed-btn4 ">Text</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="single_help_wrap">-->
+<!--                            <div class="thumb">-->
+<!--                                <img src="#" alt="">-->
+<!--                            </div>-->
+<!--                            <div class="help_content">-->
+<!--                                <h3>Text</h3>-->
+<!--                                <div class="donate_amount d-flex">-->
+<!--                                    <div class="single_amount">-->
+<!--                                        <span>Text</span>-->
+<!--                                        <h3>Text</h3>-->
+<!--                                    </div>-->
+<!--                                    <div class="single_amount">-->
+<!--                                        <span>Text</span>-->
+<!--                                        <h3>Text</h3>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <a href="#" class="boxed-btn4 ">Text</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; help_area_end &ndash;&gt;-->
+
+
+    <!-- volunteers_area_satrt -->
+    <center>
+    <div class="volunteers_area gray-bg">
+        <center><h3>Another huge factor we hear about but don't often see accurate data for is the finances related to college. Despite college tuition soaring over the decades, how has financial aid stacked up to match?</h3></center>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                        <center><p>Here, we can see that the aid a student receives on average has stayed about the same. Because it has not grown to match the tuition, there is a bigger gap between what a student must pay and how much help they have for that goal. As such, students are put in greater debt than ever.</p>
+                        <div id="volunteers_area"></div>
+                        <select id="select-key-fin" id="selected" class="mdb-select">
+                            <option value="2015">2015</option>
+                            <option value="2011">2011</option>
+                            <option value="2003">2003</option>
+                            <option value="1999">1999</option>
+                            <option value="1995">1995</option>
+                            <option value="1992">1992</option>
+                        </select>
+                        </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    </center>
+    <!-- volunteers_area_end -->
+
+    <div class="about_area">
+        <center><div class="container">
+            <h3> Conclusion</h3>
+            <h4>As we can see from the above data, more and more students are attending college. Although more states are
+                sending greater numbers of students to university, the majority of enrolled students are still white. However,
+                especially in recent years, diversity has started increasing more sharply, so we may see the trend change in
+                the future. Those students that are in college are studying STEM subjects more than before, but other fields
+                continue to take the lead, particularly business and other pre-professional majors. Finally, as we can see the
+                cost of college has skyrocketed, while financial aid has stayed rather stagnant over the decades. Perhaps, the United States is in fact not properly accommodating the needs of the education-seeking population.</h4>
+        </div></center>
+    </div>
+
+    <!-- become_volunter_start -->
+    <div class="become_volunter volunter_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 col-md-10 offset-md-1">
+                    <div class="volunter_text text-center">
+                        <h3>Resources</h3>
+                        <p>For more information and to see the data we referenced, visit the NCES website.</p>
+                        <a class="boxed-btn4" href="https://nces.ed.gov/programs/digest/current_tables.asp?fbclid=IwAR1E6_ePdZq9BTDRMAZYm_J9n8HcSXGvO0qa20wmezTAzX_Qz36EHqTUw8w">NCES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- become_volunter_end -->
+
+    
+    <!-- footer_start -->
+    <footer class="footer">
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer_end -->
+
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+<!--    <script src="js/topojson.min.js"></script>-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/queue.v1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script>window.d3v4=window.d3</script>
+    <script src="js/d3.v3.min.js"></script>
+    <script>window.d3v3=window.d3</script>
+    <script>window.d3=window.d3v4</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js" integrity="sha256-Bsj9aso0jyDIJBXgbh/g/fbzMHA9cOBX4sd9CeUSUE4=" crossorigin="anonymous"></script>
+
+    <script src="js/topojson.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+
+
+
+    <!--personal files-->
+    <script src="js/main.js"></script>
+    <script src="js/bar-charts.js"></script>
+    <script src="js/line-graph.js"></script>
+    <script src="js/donuts.js"></script>
+    <script src="js/choropleth.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+
+/* YOUR CSS STYLES */
+
+.labels{
+    font-size: 9px
+}
+
+.d3-tip {
+    line-height: 1;
+    padding: 11px;
+    background: rgba(43,43,43, 0.8);
+    color: #fff;
+    border-radius: 2px;
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.axis{
+    font-size: 8px
+}
+
+
+.heading1{
+    font-family: Baskerville;
+    font-size: 50px;
+    text-align: center;
+}
+
+.heading2{
+    font-family: Baskerville;
+    font-size: 30px;
+    text-align: center;
+}
+.heading3{
+    font-family: Baskerville;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.extra-text{
+    font-family: Baskerville
+}
+
+.styling{
+    background-color: lightyellow;
+}
+
+.column1 {
+    float: left;
+    width: 50%;
+    align-content: center;
+}
+.column12 {
+    float: left;
+    width: 40%;
+    align-content: center;
+    transform: translate(0%, -21%);
+}
+.column21 {
+    float: left;
+    width: 50%;
+    font-size: 18px
+}
+.column22 {
+    float: left;
+    width: 60%;
+}
+
+.column13 {
+    float: left;
+    width: 20%;
+    align-content: center;
+    transform: translate(60%, -10%);
+}
+.column23 {
+    float: left;
+    width: 50%;
+    color: black;
+    font-family: Baskerville;
+    transform: translate(40%, -10%);
+}
+
+.axis{
+    font-family: Baskerville;
+}
+
+#select-key{
+    font-family: Baskerville;
+}
+
+.info{
+    color: darkred;
+    font-family: Baskerville;
+    border-style: double;
+    border-width: 5px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.infoprogress{
+    color: navy;
+    font-family: Baskerville;
+    border-style: double;
+    border-width: 5px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    transform: translate(10%, 10%);
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(400%, 10%);
+    font-size: 18px;
+}
+
+
+.img1 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    transform: translate(-20%, 10%);
+}
+
+
+.img2 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    transform: translate(10%, 40%);
+}
+
+.infotext1{
+    transform: translate(-10%,50%);
+    text-align: center;
+    font-family: Baskerville;
+    font-size: 30px
+    border-style: double;
+}
+
+.infotext2{
+    transform: translate(10%, 275%);
+    text-align: center;
+    font-family: Baskerville;
+    font-size: 18px
+}
+
+.axis-label{
+    font-size: 14px;
+    font-family: Baskerville;
+}

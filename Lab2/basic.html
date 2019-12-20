@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+
+    <div id="content-1"></div>
+    <div id="content-2"></div>
+
+    <script type="text/javascript">
+        // Write HTML with JS
+        document.getElementById("content-1").innerHTML = '<h1>Javascript Intro</h1>...and some text';
+
+        // Loop through array, build HTML block and finally display it on the page
+        var fruits = ["Orange", "Banana", "Apple"];
+        var result = '';
+        for (var i = 0; i < fruits.length; i++) {
+            result += fruits[i] + "<br/>";
+        }
+        document.getElementById("content-2").innerHTML = result;
+    </script>
+
+    <div id="content-3"></div>
+    <div id="content-4"></div>
+
+    <script type="text/javascript">
+
+        document.getElementById("content-3").innerHTML = '<h1>Debug Function</h1>';
+        var dells = [
+            {id: "H",
+                name: "Hades",
+                price: 6,
+                open: ["Monday", "Wednesday", "Friday"],
+                limit: true
+            },
+            {id: "Z",
+                name: "Zeus",
+                price: 5,
+                open: ["Tuesday", "Thursday"],
+                limit: true
+            },
+            {id: "P",
+                name: "Pegasus",
+                price: 2,
+                open: ["Saturday", "Sunday"],
+                limit: false
+            }
+        ];
+        var result2 = "";
+        debugAmusementRides(dells);
+        function debugAmusementRides(attractions){
+            attractions.forEach(function (element, index) {
+                if (index != 1) {
+                    element.price *= 2;
+                }
+            });
+            attractions.forEach(function (element){
+                var px = element.price;
+                result2 += element.name + " " + px + "<br>";
+            });
+        }
+
+        document.getElementById("content-4").innerHTML = result2;
+    </script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+
+</body>
+</html>
+

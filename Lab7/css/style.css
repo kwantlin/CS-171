@@ -1,0 +1,21 @@
+.map{
+      fill: forestgreen;
+  }
+
+.lines{
+    stroke: black;
+}
+
+.node{
+    stroke: green;
+}
+
+.headline{
+    font-family: Georgia;
+    font-size: 33px;
+    color: white;
+}
+
+.styling{
+    background-color: black;
+}

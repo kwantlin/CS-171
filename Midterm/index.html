@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CS171 - Midterm Project</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<h1 class = "heading1">State of Malaria in the Modern World</h1>
+<center>
+<div class = "info">
+
+	RISK: About 3.2 billion people – almost half of the world’s population – are at risk of malaria.
+	<br>CASES: 214 million malaria cases reported worldwide in 2015.
+	<br>INCIDENCE: 37% global decrease in malaria incidence between 2000 and 2015.
+	<br>MORTALITY: 60% decrease in global malaria mortality rates between 2000 and 2015.
+
+</div>
+	<div>
+		<br>
+		<br>
+	</div>
+
+</center>
+<body class = "styling">
+
+<div class="row alignment">
+	<div class="column1">
+		<div id = "chart-area">
+			<h1 class = "heading2"> Malaria Cases Per Country</h1>
+			<h1 class = "heading3"> (and as Percentage of UN Population)</h1>
+		</div>
+	</div>
+	<div class="column21">
+		<div class = "infotext1">
+			Malaria is a life-threatening disease caused by parasites that are transmitted <br>to people through the bites of
+			infected female mosquitoes.
+
+		</div>
+		<img src="img/malaria_stock2.jpg" class = "img1"alt="Mosquito">
+<!--		<div class="center">Malaria is a life-threatening disease caused by parasites that are transmitted to people through the bites of-->
+<!--			infected female mosquitoes.</div>-->
+	</div>
+</div>
+
+<div class="row alignment">
+	<div class="column12">
+		<div class = "infotext2">
+
+			Most cases in 2015 are estimated to have occurred in the WHO African Region (88%), <br>and most deaths in 2015 were in
+			the WHO African Region (90%)
+
+
+		</div>
+		<div>
+			<br>
+			<br>
+			<br>
+		</div>
+		<img src="img/malaria_stock3.jpg" class = "img2" alt="Mosquito">
+	</div>
+	<div class="column22">
+		<h1 class = "heading2" >Africa Map of Selected Characteristic </h1>
+		<center>
+			<select id = "select-key">
+				<option value = "UN_population" > UN population (people) </option>
+				<option value = "At_risk" > At risk (level) </option>
+				<option value = "At_high_risk" > At high risk (level)</option>
+				<option value = "Suspected_malaria_cases" > Suspected malaria cases (cases)</option>
+				<option value = "Malaria_cases" > Malaria cases (cases)</option>
+			</select>
+		</center>
+		<div id = "choro">  </div>
+	</div>
+</div>
+
+
+<div>
+	<br>
+	<br>
+</div>
+<div class="row alignment">
+
+
+	<div class="column13">
+
+		<img src="img/malaria_stock1.png" alt="Teacher">
+	</div>
+	<div class="column23">
+
+
+		<div class = "infoprogress">
+			<h1> <center> Progress</center></h1>
+			An increasing number of countries are moving towards elimination of malaria.
+			Whereas only 13 countries were estimated to have fewer than 1000 malaria cases in 2000, 33 countries are
+			estimated to have achieved this milestone in 2015.
+			Global financing for malaria control increased from an estimated
+			US$ 960 million in 2005 to US$ 2.5 billion in 2014.
+
+		</div>
+	</div>
+</div>
+
+<div>
+	<br>
+	<br>
+	<br>
+
+</div>
+
+	<!-- Load JS libraries -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/queue.min.js"></script>
+	<script src="js/topojson.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/d3-tip.js"></script>
+
+	<!-- Choropleth and second visualization -->
+	<script src="js/vis-choropleth.js"></script>
+	<script src="js/vis-second.js"></script>
+
+</body>
+</html>
